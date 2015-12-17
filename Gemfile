@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.5'
+ruby '2.2.3'
 
 gem 'rails', '4.1.7'
 
@@ -21,9 +21,10 @@ gem 'rails_admin', '~> 0.6'
 gem 'ransack', '~> 1.1'
 gem 'redis', '~> 3.0'
 gem 'sass-rails', '~> 4.0'
-gem 'simple_form', '~> 3.0'
+gem 'simple_form', '~> 3.2'
 gem 'sitemap_generator', '~> 5.0', require: false
 gem 'slim', '~> 2.0'
+# gem 'slim-rails'
 gem 'sucker_punch', '~> 1.0'
 gem 'therubyracer', '~> 0.12', platforms: :ruby
 gem 'uglifier', '>= 1.3.0'
