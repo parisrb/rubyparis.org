@@ -88,6 +88,12 @@ class Talk < ApplicationRecord
         .order(duration: :asc, created_at: :desc)
     }
 
+  scope :next_talks,
+    -> {
+      where('happened_at > ?', 2.weeks.from_now)
+        .order(duration: :asc, created_at: :asc)
+    }
+
   scope :proposed,
     -> {
       where('happened_at IS NULL OR happened_at > ?', 2.weeks.from_now)
